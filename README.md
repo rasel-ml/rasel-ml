@@ -6,9 +6,7 @@
 
 <img src="https://github-readme-streak-stats-eight.vercel.app/?user=rasel-ml&theme=radical" alt="Rasel's streak" />
 
-<a href="https://github.com/rasel-ml/EDGE-DataScience-Project">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme=radical" />
-  </a>
+<a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme=radical"/></a>
 
 <p align="center">
   <a href="https://www.facebook.com/me.mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="facebook logo"/></a>
