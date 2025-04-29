@@ -1,6 +1,4 @@
-- 👋 Hi, I’m **Rasel Molla**
-- 👀 I’m interested in Datascience.
-- 🌱 I’m currently learning Python
+<h1 align="center">Rasel :)</h1>
 
 <br>
 
@@ -20,7 +18,7 @@
 
 <div align="center"><p><b>My Experties</b></p>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" alt="python" width="50" height="50"/></a>
-<a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" alt="html" width="45" height="45"/></a>
+<a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" alt="html" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/scikitlearn/scikitlearn-original.svg" alt="scikitlearn" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/matplotlib/matplotlib-original-wordmark.svg" alt="matplotlib" width="50" height="50"/></a>
@@ -40,6 +38,6 @@
   <a href="https://instagram.com/mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo"/></a>
   <a href="https://t.me/me_mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="telegram logo"/></a>
   <a href="mailto:mrasel21.glm@bu.ac.bd" target="_blank"><img src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=EA4335&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="email logo"/></a>
-  <a href="https://www.facebook.com/me.mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=2BCC48&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="whatsapp logo"/></a>
+  <a href="https://wa.me/01728973726" target="_blank"><img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=2BCC48&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="whatsapp logo"/></a>
   <a href="" target="_blank"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedln&label=&color=0073B2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"/></a>
 </div>
