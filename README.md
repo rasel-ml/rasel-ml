@@ -2,7 +2,6 @@
 - 👀 I’m interested in Datascience.
 - 🌱 I’m currently learning Python
 
-<h3 align="center">Let's Connect!</h3>
 
 <p align="center">
   <a href="https://www.facebook.com/me.mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="facebook logo"/></a>
