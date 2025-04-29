@@ -21,11 +21,11 @@
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" alt="html" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="50" height="50"/></a>
 <br>
+<a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/pandas/pandas-original-wordmark.svg" alt="pandas" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/matplotlib/matplotlib-original-wordmark.svg" alt="matplotlib" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original-wordmark.svg" alt="numpy" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/django/django-plain-wordmark.svg" alt="django" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/scikitlearn/scikitlearn-original.svg" alt="scikitlearn" width="50" height="50"/></a>
-<a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/pandas/pandas-original-wordmark.svg" alt="pandas" width="50" height="50"/></a>
 <!---
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/" alt="html" width="50" height="50"/></a>
 --->
