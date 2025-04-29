@@ -2,7 +2,7 @@
 - 👀 I’m interested in Datascience.
 - 🌱 I’m currently learning Python
 
----
+<br>
 
 <div align="center"><p><b>My Stats</b></p>
 <a href=""><img src="https://github-readme-stats.vercel.app/api?username=rasel-ml&show_icons=true&theme=radical" alt="Rasel's GitHub stats"/></a>
@@ -10,19 +10,21 @@
 <a href=""><img src="https://github-readme-streak-stats-eight.vercel.app/?user=rasel-ml&theme=radical" alt="Rasel's streak"/></a>
 </div>
 
----
+<br>
 
 <div align="center"><p><b>My Projects</b></p>
 <a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme=radical"/></a>
 </div>
 
----
+<br>
 
 <div align="center"><p><b>My Experties</b></p>
 <a href=""><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a>
+<a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="html" width="38" height="38"/></a>
+
 </div>
 
----
+<br>
 
 <p align="center">
   <a href="https://www.facebook.com/me.mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="facebook logo"/></a>
