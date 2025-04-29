@@ -1,21 +1,14 @@
-<h1 align="center">Rasel :)</h1>
-
-<br>
-
 <div align="center"><p><b>My Github Stats</b></p>
 <a href=""><img src="https://github-readme-stats.vercel.app/api?username=rasel-ml&show_icons=true&theme=radical" alt="Rasel's GitHub stats"/></a>
-
 <a href=""><img src="https://github-readme-streak-stats-eight.vercel.app/?user=rasel-ml&theme=radical" alt="Rasel's streak"/></a>
 </div>
-
 <br>
-
+<br>
 <div align="center"><p><b>My Projects</b></p>
 <a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme=radical"/></a>
 </div>
-
 <br>
-
+<br>
 <div align="center"><p><b>My Experties</b></p>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" alt="python" width="50" height="50"/></a>
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" alt="html" width="50" height="50"/></a>
@@ -30,10 +23,9 @@
 <a href=""><img src="https://github.com/devicons/devicon/blob/master/icons/" alt="html" width="50" height="50"/></a>
 --->
 </div>
-
 <br>
-
-<div align="center"><p><b>Connect with me</b></p>
+<br>
+<div align="center"><p><b>Contact Me</b></p>
   <a href="https://fb.com/me.mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Facebook"/></a>
   <a href="https://instagram.com/" target="_blank"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Instagram"/></a>
   <a href="https://x.com/" target="_blank"><img src="https://img.shields.io/static/v1?message=Twitter&logo=x&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Twitter"/></a>
