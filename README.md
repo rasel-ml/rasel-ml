@@ -1,11 +1,12 @@
 <div align="center"><p><b>My Github Stats</b></p>
-<a href=""><img src="https://github-readme-stats.vercel.app/api?username=rasel-ml&show_icons=true&theme=radical" alt="Rasel's GitHub stats"/></a>
+<a href=""><img src="https://github-readme-stats.vercel.app/api?username=rasel-ml&show_icons=true&theme=radical&hide=prs,contribs&rank_icon=github&custom_title=Rasel's%20GitHub%20Stats&include_all_commits=True" alt="Rasel's GitHub stats"/></a>
 <a href=""><img src="https://github-readme-streak-stats-eight.vercel.app/?user=rasel-ml&theme=radical" alt="Rasel's streak"/></a>
+<a href=""><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rasel-ml&layout=compact&theme=radical" alt="Top Languages" width="100%"/></a>
 </div>
 <br>
 <br>
 <div align="center"><p><b>My Projects</b></p>
-<a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme="/></a>
+<a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme=radical&show_owner="/></a>
 </div>
 <br>
 <br>
