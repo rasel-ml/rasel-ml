@@ -7,6 +7,7 @@
 <br>
 <div align="center"><p><b>My Projects</b></p>
 <a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=EDGE-DataScience-Project&theme=radical&show_owner="/></a>
+<a href="https://github.com/rasel-ml/PyApps"><img src="https://github-readme-stats.vercel.app/api/pin/?username=rasel-ml&repo=PyApps&theme=radical"/></a>
 </div>
 <br>
 <br>
