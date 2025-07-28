@@ -34,5 +34,5 @@
   <a href="https://wa.me/8801728973726" target="_blank"><img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=2BCC48&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="WhatsApp"/></a>
   <a href="https://t.me/me_mrm" target="_blank"><img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Telegram"/></a>
   <a href="mailto:mrasel21.glm@bu.ac.bd"><img src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=EA4335&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Email"/></a>
-  <a href="[https://www.linkedin.com/in/md-rasel-molla-a0a0bb352](https://www.linkedin.com/in/md-rasel-molla-56744b377" target="_blank"><img src="https://img.shields.io/static/v1?message=Linkedin&logo=linkedln&label=&color=0073B2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/md-rasel-molla-a0a0bb352" target="_blank"><img src="https://img.shields.io/static/v1?message=Linkedin&logo=linkedln&label=&color=0073B2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="LinkedIn"/></a>
 </div>
