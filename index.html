@@ -3,27 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Rasel Molla | Portfolio</title>
-    <link rel="icon" href="raw/favicon.ico">
+    <meta name="description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
+    <meta property="og:title" content="Md. Rasel Molla | Portfolio">
+    <meta property="og:description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
+    <meta property="og:image" content="https://rasel-ml.github.io/rasel-ml/res/self.webp">
+    <meta property="og:url" content="https://rasel-ml.github.io">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Md. Rasel Molla | Portfolio">
+    <meta name="twitter:description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
+    <meta name="twitter:image" content="https://example.com/images/preview.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/favicon.ico">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js" defer></script>
+    <noscript><style>.rv{opacity:1;transform:none}</style></noscript>
 </head>
 
 <body>
-
     <!-- TOPBAR MOBILE -->
     <div class="topbar">
         <span class="tb-brand" id="greeting">Welcome!</span>
-        <button class="burger" onclick="toggleDrawer()"><i class="fas fa-bars"></i></button>
+        <button class="burger" onclick="toggleDrawer()" aria-label="Open menu"><i class="fas fa-bars"></i></button>
     </div>
 
     <!-- DRAWER -->
     <div class="drawer" id="drawer">
         <div class="drawer-bg" onclick="toggleDrawer()"></div>
         <div class="drawer-panel">
-            <button class="drawer-close" onclick="toggleDrawer()"><i class="fas fa-times"></i></button>
+            <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close menu"><i class="fas fa-times"></i></button>
             <a href="#self" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-house"></i><span>Home</span><span class="nav-bar"></span></a>
             <a href="#about" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-user"></i><span>About</span><span class="nav-bar"></span></a>
             <a href="#skills" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-layer-group"></i><span>Skills</span><span class="nav-bar"></span></a>
@@ -36,17 +46,17 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
         <div class="sb-progress" id="sbProg"></div>
-
         <div class="sb-top">
             <div class="sb-avatar-ring">
-                <img src="raw/self.png" class="sb-avatar" alt="Md Rasel Molla">
+                <img src="res/self.webp" class="sb-avatar" alt="Md Rasel Molla">
                 <span class="sb-dot"></span>
             </div>
             <div class="sb-name">Md. Rasel Molla</div>
-            <div class="sb-role">App Developer | Enthusiast</div>
+            <div class="sb-role">Developer · Learner · Explorer</div>
             <div class="sb-chips">
-                <span class="sb-chip">App Development</span>
+                <span class="sb-chip">Android Dev</span>
                 <span class="sb-chip">Data Science</span>
+                <span class="sb-chip">Vibe Coding</span>
             </div>
         </div>
 
@@ -76,7 +86,7 @@
                     <div class="self-img-wraps">
                         <div class="self-frame-1"></div>
                         <div class="self-frame-2"></div>
-                        <img src="raw/self.png" class="self-photo-top" alt="Md Rasel Molla">
+                        <img src="res/self.webp" class="self-photo-top" alt="Md Rasel Molla">
                     </div>
                 </div>
                 <div class="hero-text">
@@ -86,22 +96,30 @@
                     <p class="hero-desc2">I believe the best way to learn technology is to stay curious, experiment and build things that are genuinely useful. I like understanding not just how something works, but why. I'm always looking for ways to turn that curiosity into something practical, open and shareable.</p>
 
                     <div class="stats">
-                    <div><a href="#projects"><div class="stat-n" data-target="3">3+</div></a><div class="stat-l">Projects</div></div>
-                    <div><a href="#certifications"><div class="stat-n" data-target="5">5+</div></a><div class="stat-l">Certifications</div></div>
+                        <div><a href="#projects">
+                                <div class="stat-n" data-target="2">2+</div>
+                            </a>
+                            <div class="stat-l">Projects</div>
+                        </div>
+                        <div><a href="#certifications">
+                                <div class="stat-n" data-target="6"></div>
+                            </a>
+                            <div class="stat-l">Certifications</div>
+                        </div>
                     </div>
 
                     <div class="hero-contacts">
-                        
+
                         <a href="mailto:mrasel21.glm@bu.ac.bd" title="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://github.com/rasel-ml" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/rasel-ml" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/rasel-ml" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rasel-ml" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://wa.me/me.mrm" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        
+
                         <a href="https://t.me/me_mrm" title="Telegram"><i class="fa-regular fa-paper-plane"></i></a>
-                        <a href="https://fb.me/me.mrm" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/qq_mrm" target="_blank" title="X"><i class="fa-brands fa-x-twitter"></i></a>
-                      
-                        
+                        <a href="https://fb.me/me.mrm" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/qq_mrm" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+
+
                     </div>
                 </div>
 
@@ -109,7 +127,7 @@
                     <div class="hero-img-wrap">
                         <div class="hero-frame1"></div>
                         <div class="hero-frame2"></div>
-                        <img src="raw/self.png" class="hero-photo" alt="Md Rasel Molla">
+                        <img src="res/self.webp" class="hero-photo" alt="Md Rasel Molla">
                     </div>
                 </div>
             </div>
@@ -125,60 +143,93 @@
             <div class="a-tabs">
                 <button class="a-tab active" onclick="switchaTab(this,'personal')">Personal Info</button>
                 <button class="a-tab" onclick="switchaTab(this,'education')">Education</button>
-                <button class="a-tab" onclick="switchaTab(this,'address')">Address</button>
+                <button class="a-tab" onclick="switchaTab(this,'others')">Others</button>
             </div>
-            
+
             <div id="personal" class="info-cards active">
-                <div class="info-card pad-1 rv d1">
-                    <div class="info-icon"><i class="fa-solid fa-cake-candles"></i></div>
+            <div class="info-label">Basic Info</div>
+                <div class="info-card pad-2 rv d1">
+                    <div class="info-icon"><i style="color:HotPink;" class="fa-solid fa-cake-candles"></i></div>
                     <div>
                         <div class="info-lbl">Date Of Birth</div>
                         <div class="info-val">28 September</div>
                     </div>
                 </div>
-                <div class="info-card pad-1 rv d2">
-                    <div class="info-icon"><i class="fa-solid fa-star-and-crescent"></i></div>
+                <div class="info-card pad-2 rv d2">
+                    <div class="info-icon"><i style="color:SeaGreen;" class="fa-solid fa-star-and-crescent"></i></div>
                     <div>
                         <div class="info-lbl">Religion</div>
                         <div class="info-val">Islam</div>
                     </div>
                 </div>
-                <div class="info-card pad-1 rv d3">
-                    <div class="info-icon"><i class="fa-solid fa-mars"></i></div>
+                <div class="info-card pad-2 rv d3">
+                    <div class="info-icon"><i style="color:purple;" class="fa-solid fa-mars"></i></div>
                     <div>
                         <div class="info-lbl">Gender</div>
                         <div class="info-val">Male</div>
                     </div>
                 </div>
-                <div class="info-card pad-1 rv">
-                    <div class="info-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="info-card pad-2 rv">
+                    <div class="info-icon"><i style="color:LightCoral;" class="fa-solid fa-heart"></i></div>
                     <div>
                         <div class="info-lbl">Marital Status</div>
                         <div class="info-val">Single</div>
                     </div>
                 </div>
-                <div class="info-card pad-1 rv">
-                    <div class="info-icon"><i class="fa-solid fa-droplet"></i></div>
+                <div class="info-card pad-2 rv">
+                    <div class="info-icon"><i style="color:Crimson;" class="fa-solid fa-droplet"></i></div>
                     <div>
                         <div class="info-lbl">Blood Group</div>
                         <div class="info-val">A+</div>
                     </div>
                 </div>
-                <div class="info-card pad-1 rv">
-                    <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="info-card pad-2 rv">
+                    <div class="info-icon"><i style="color:SlateBlue;" class="fa-solid fa-globe"></i></div>
                     <div>
                         <div class="info-lbl">Nationality</div>
                         <div class="info-val">Bangladeshi</div>
                     </div>
                 </div>
-                
+                <div class="info-label">Present Address</div>
+
+                <div class="info-card pad-2 rv d2">
+                    <div class="info-icon"><i class="fa-solid fa-signs-post"></i></div>
+                    <div>
+                        <div class="info-lbl">Post office</div>
+                        <div class="info-val">Barishal Sadar</div>
+                    </div>
+                </div>
+
+                <div class="info-card pad-2 rv d2">
+                    <div class="info-icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
+                    <div>
+                        <div class="info-lbl">Post Code</div>
+                        <div class="info-val">8200</div>
+                    </div>
+                </div>
+
+                <div class="info-card pad-2 rv d3">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <div class="info-lbl">Division</div>
+                        <div class="info-val">Barishal</div>
+                    </div>
+                </div>
+                <div class="info-card pad-2 rv d1">
+                    <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div>
+                        <div class="info-lbl">Country</div>
+                        <div class="info-val">Bangladesh</div>
+                    </div>
+                </div>
+
             </div>
-            
-            
+
+
             <div id="education" class="info-cards">
-            
+
                 <div class="info-label">SSC</div>
-                
+
                 <div class="info-card pad-2 rv d2">
                     <div class="info-icon"><i class="fa-solid fa-people-roof"></i></div>
                     <div>
@@ -186,7 +237,7 @@
                         <div class="info-val">Science</div>
                     </div>
                 </div>
-                
+
                 <div class="info-card pad-2 rv d3">
                     <div class="info-icon"><i class="fa-solid fa-award"></i></div>
                     <div>
@@ -208,9 +259,9 @@
                         <div class="info-val">Bhitabaria Model Secondary School</div>
                     </div>
                 </div>
-                
+
                 <div class="info-label">HSC</div>
-                
+
                 <div class="info-card pad-2 rv d2">
                     <div class="info-icon"><i class="fa-solid fa-people-roof"></i></div>
                     <div>
@@ -218,7 +269,7 @@
                         <div class="info-val">Science</div>
                     </div>
                 </div>
-                
+
                 <div class="info-card pad-2 rv d3">
                     <div class="info-icon"><i class="fa-solid fa-award"></i></div>
                     <div>
@@ -240,11 +291,11 @@
                         <div class="info-val">Bangladesh Navy College, Dhaka</div>
                     </div>
                 </div>
-            
-            
-            
+
+
+
                 <div class="info-label">Graduation</div>
-                
+
                 <div class="info-card pad-2 rv d2">
                     <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div>
@@ -274,40 +325,40 @@
                     </div>
                 </div>
             </div>
-            <div id="address" class="info-cards">
-                <div class="info-label">Present Address</div>
-                
-                <div class="info-card pad-1 rv d2">
-                    <div class="info-icon"><i class="fa-solid fa-signs-post"></i></div>
-                    <div>
-                        <div class="info-lbl">Post office</div>
-                        <div class="info-val">Barishal Sadar</div>
-                    </div>
+            <div id="others" class="info-cards">
+                <div class="info-label">Language</div>
+                <div class="info-card pad-2 rv d3">
+                        <div class="info-icon"><b>অ</b></div>
+                        <div>
+                            <div class="info-lbl">Primary Language</div>
+                            <div class="info-val">Bangla (বাংলা)</div>
+                        </div>
                 </div>
-                
-                <div class="info-card pad-1 rv d2">
-                    <div class="info-icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
-                    <div>
-                        <div class="info-lbl">Post Code</div>
-                        <div class="info-val">8200</div>
-                    </div>
+                <div class="info-card pad-2 rv d3">
+                        <div class="info-icon"><b>A</b></div>
+                        <div>
+                            <div class="info-lbl">Secondary Language</div>
+                            <div class="info-val">English</div>
+                        </div>
                 </div>
-                
-                <div class="info-card pad-1 rv d3">
-                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div>
-                        <div class="info-lbl">Division</div>
-                        <div class="info-val">Barishal</div>
-                    </div>
+                <div class="info-label">Hobbies</div>
+                <div class="info-card pad-2 rv d3">
+                        <div class="info-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        <div>
+                            
+                            <div class="info-val">Notaphily</div>
+                            <div class="info-lbl">Collecting 100+ notes so far of 24 different country. 1 denomination note shdkjd</div>
+                        </div>
                 </div>
-                <div class="info-card pad-1 rv d1">
-                    <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                    <div>
-                        <div class="info-lbl">Country</div>
-                        <div class="info-val">Bangladesh</div>
-                    </div>
+                <div class="info-card pad-2 rv d3">
+                        <div class="info-icon"><i class="fa-solid fa-coins"></i></div>
+                        <div>
+                            <!-- <div class="info-lbl">Primary Language</div> -->
+                            <div class="info-val">Numismatics</div>
+                        </div>
                 </div>
             </div>
+            
         </section>
 
         <!-- ── SKILLS ── -->
@@ -351,7 +402,7 @@
                         </div>
                     </div>
                     <div class="skill-item rv d1">
-                        <div class="skill-top"><span class="skill-nm">Office Softwares</span><span class="skill-pc">80%</span></div>
+                        <div class="skill-top"><span class="skill-nm">Office Software</span><span class="skill-pc">80%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="80"></div>
                         </div>
@@ -363,10 +414,12 @@
                         <span class="tool"><i class="fab fa-python"></i>Python</span>
                         <span class="tool"><i class="fas fa-code"></i>Kotlin</span>
                         <span class="tool"><i class="fa-brands fa-java"></i>Java</span>
-                        <span class="tool"><i class="fa-brands fa-html5"></i>Html</span>
+                        <span class="tool"><i class="fa-brands fa-html5"></i>HTML</span>
                         <span class="tool"><i class="fa-brands fa-css"></i>CSS</span>
                         <span class="tool"><i class="fa-solid fa-terminal"></i>Termux</span>
                         <span class="tool"><i class="fab fa-github"></i>Git</span>
+                        <span class="tool"><i class="fa-solid fa-earth-asia"></i>ArcGIS</span>
+                        <span class="tool"><i class="fa-solid fa-file-lines"></i>Office</span>
                     </div>
                 </div>
             </div>
@@ -382,7 +435,7 @@
             <div class="proj-grid">
 
                 <div class="proj-card rv" onclick="openM('m1')">
-                    <div class="proj-thumb-wrap"><img src="raw/fontlens.jpg" class="proj-thumb" alt="Fontlens">
+                    <div class="proj-thumb-wrap"><img src="res/fontlens.webp" class="proj-thumb" alt="FontLens app screenshot">
                         <div class="proj-overlay"></div><span class="proj-bdg">Software</span>
                     </div>
                     <div class="proj-body">
@@ -394,8 +447,20 @@
                 </div>
 
                 <div class="proj-card rv d1" onclick="openM('m2')">
-                    <div class="proj-thumb-wrap"><img src="raw/metromate.png" class="proj-thumb" alt="MetroMate">
+                    <div class="proj-thumb-wrap"><img src="res/metromate.webp" class="proj-thumb" alt="MetroMate app screenshot">
                         <div class="proj-overlay"></div><span class="proj-bdg">Software</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">MetroMate</div>
+                        <div class="proj-desc">A convenient Android app for checking your Dhaka MRT Card balance on the go.</div>
+                        <div class="proj-tags"><span class="proj-tag">Android</span><span class="proj-tag">Kotlin</span></div>
+                        <div class="proj-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                
+                <div class="proj-card rv d1" onclick="openM('m3')">
+                    <div class="proj-thumb-wrap"><img src="res/weather.webp" class="proj-thumb" alt="MetroMate app screenshot">
+                        <div class="proj-overlay"></div><span class="proj-bdg">WebApp</span>
                     </div>
                     <div class="proj-body">
                         <div class="proj-title">MetroMate</div>
@@ -425,7 +490,7 @@
             <div id="all" class="c-panel active">
                 <div class="c-item rv">
                     <div class="c-icon g"><i class="fab fa-python"></i></div>
-                    <div>
+                    <div class="c-body">
                         <div class="c-name">Data Science with Python</div>
                         <div class="c-org">Enhancing Digital Government &amp; Economy Project (EDGE)</div>
                         <div class="c-desc">80-hour training covering Python for data science, data manipulation, visualization, and applied machine learning.</div>
@@ -434,7 +499,7 @@
                 </div>
                 <div class="c-item rv">
                     <div class="c-icon g"><i class="fa-solid fa-chart-area"></i></div>
-                    <div>
+                    <div class="c-body">
                         <div class="c-name">Data Science, Machine Learning : Ultimate Course Bootcamp</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Comprehensive training in Data Science and Machine Learning, covering Python, data preprocessing, EDA, feature engineering, model development, evaluation, and deployment.</div>
@@ -442,8 +507,8 @@
                     </div>
                 </div>
                 <div class="c-item rv">
-                    <div class="c-icon gl"><i class="fas fa-code"></i></div>
-                    <div>
+                    <div class="c-icon r"><i class="fa-solid fa-file-code"></i></div>
+                    <div class="c-body">
                         <div class="c-name">Java &amp; Python Programming Mastery: Learn to Code Like a Pro</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Comprehensive Java and Python training covering programming fundamentals, OOP, data structures, file handling, databases, web development, data analysis, automation, and advanced programming concepts.</div>
@@ -451,8 +516,17 @@
                     </div>
                 </div>
                 <div class="c-item rv">
+                    <div class="c-icon r"><i class="fa-brands fa-java"></i></div>
+                    <div class="c-body">
+                        <div class="c-name">Java to Develop Programming Skills</div>
+                        <div class="c-org">Udemy</div>
+                        <div class="c-desc">Completed a comprehensive 27-hour Java programming course covering Java fundamentals, Object-Oriented Programming (OOP), collections, exception handling, file handling, database connectivity, and practical application development.</div>
+                        <a href="https://www.udemy.com/certificate/UC-3d09637b-94bb-4000-86f0-5c819a488328/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+                <div class="c-item rv">
                     <div class="c-icon gl"><i class="fa-solid fa-file-word"></i></div>
-                    <div>
+                    <div class="c-body">
                         <div class="c-name">MS Word - Microsoft Word Course Beginner to Expert</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Completed a MS Word course covering essential tools &amp; features from beginner to advanced levels.</div>
@@ -460,8 +534,8 @@
                     </div>
                 </div>
                 <div class="c-item rv d1">
-                    <div class="c-icon r"><i class="fa-solid fa-file-excel"></i></div>
-                    <div>
+                    <div class="c-icon gl"><i class="fa-solid fa-file-excel"></i></div>
+                    <div class="c-body">
                         <div class="c-name">Microsoft Excel 101 - Excel From Beginners to Advanced</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Completed MS Excel training from beginner to advanced level. Developed practical skills in data organization, visualization &amp; advanced Excel techniques.</div>
@@ -473,7 +547,7 @@
             <div id="data" class="c-panel">
                 <div class="c-item rv">
                     <div class="c-icon g"><i class="fab fa-python"></i></div>
-                    <div>
+                    <div class="c-body">
                         <div class="c-name">Data Science with Python</div>
                         <div class="c-org">Enhancing Digital Government &amp; Economy Project (EDGE)</div>
                         <div class="c-desc">80-hour training covering Python for data science, data manipulation, visualization, and applied machine learning.</div>
@@ -482,7 +556,7 @@
                 </div>
                 <div class="c-item rv">
                     <div class="c-icon g"><i class="fa-solid fa-chart-area"></i></div>
-                    <div>
+                    <div class="c-body">
                         <div class="c-name">Data Science, Machine Learning : Ultimate Course Bootcamp</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Comprehensive training in Data Science and Machine Learning, covering Python, data preprocessing, EDA, feature engineering, model development, evaluation, and deployment.</div>
@@ -493,12 +567,21 @@
 
             <div id="prog" class="c-panel">
                 <div class="c-item rv">
-                    <div class="c-icon gl"><i class="fas fa-code"></i></div>
-                    <div>
+                    <div class="c-icon r"><i class="fa-solid fa-file-code"></i></div>
+                    <div class="c-body">
                         <div class="c-name">Java &amp; Python Programming Mastery: Learn to Code Like a Pro</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Comprehensive Java and Python training covering programming fundamentals, OOP, data structures, file handling, databases, web development, data analysis, automation, and advanced programming concepts.</div>
                         <a href="https://www.udemy.com/certificate/UC-b1816453-335a-4842-a882-a595b3678d1c/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+                <div class="c-item rv">
+                    <div class="c-icon r"><i class="fa-brands fa-java"></i></div>
+                    <div class="c-body">
+                        <div class="c-name">Java to Develop Programming Skills</div>
+                        <div class="c-org">Udemy</div>
+                        <div class="c-desc">Completed a comprehensive 27-hour Java programming course covering Java fundamentals, Object-Oriented Programming (OOP), collections, exception handling, file handling, database connectivity, and practical application development.</div>
+                        <a href="https://www.udemy.com/certificate/UC-3d09637b-94bb-4000-86f0-5c819a488328/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -506,16 +589,16 @@
             <div id="office" class="c-panel">
                 <div class="c-item rv">
                     <div class="c-icon gl"><i class="fa-solid fa-file-word"></i></div>
-                    <div>
+                    <div class="c-body">
                         <div class="c-name">MS Word - Microsoft Word Course Beginner to Expert</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Completed a MS Word course covering essential tools &amp; features from beginner to advanced levels.</div>
                         <a href="https://ude.my/UC-b6737138-7ce7-46a6-b9c1-67a6288b6e6a"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv d1">
-                    <div class="c-icon r"><i class="fa-solid fa-file-excel"></i></div>
-                    <div>
+                <div class="c-item rv">
+                    <div class="c-icon gl"><i class="fa-solid fa-file-excel"></i></div>
+                    <div class="c-body">
                         <div class="c-name">Microsoft Excel 101 - Excel From Beginners to Advanced</div>
                         <div class="c-org">Udemy</div>
                         <div class="c-desc">Completed MS Excel training from beginner to advanced level. Developed practical skills in data organization, visualization &amp; advanced Excel techniques.</div>
@@ -542,19 +625,19 @@
                                 <div class="c-link-val">rasel-ml.github.io/</div>
                             </div>
                         </a>
-                        <a href="mailto:mrasel21.glm@bu.ac.bd" class="c-link">
+                        <div class="c-link">
                             <div class="c-link-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
+                            <div class="c-link-text">
                                 <div class="c-link-lbl">Email</div>
-                                <div class="c-link-val">mrasel21.glm@bu.ac.bd   |   msg4mrm@gmail.com</div>
-                                <!-- <div class="c-link-val">msg4mrm@gmail.com</div> -->
+                                <a class="c-link-val" href="mailto:mrasel21.glm@bu.ac.bd">mrasel21.glm@bu.ac.bd</a>
+                                <a class="c-link-val" href="mailto:msg4mrm@gmail.com">msg4mrm@gmail.com</a>
                             </div>
-                        </a>
-                        <a href="https://wa.me/me.mrm" class="c-link">
+                        </div>
+                        <a href="https://wa.me/8801XXXXXXXXX" class="c-link">
                             <div class="c-link-icon"><i class="fa-brands fa-whatsapp"></i></div>
                             <div>
                                 <div class="c-link-lbl">WhatsApp</div>
-                                <div class="c-link-val">wa.me/me.mrm</div>
+                                <div class="c-link-val">wa.me/8801XXXXXXXXX</div>
                             </div>
                         </a>
                         <a href="https://fb.me/me.mrm" class="c-link">
@@ -578,21 +661,20 @@
                                 <div class="c-link-val">t.me/me_mrm</div>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/rasel-ml/" target="_blank" class="c-link">
+                        <a href="https://www.linkedin.com/in/rasel-ml/" target="_blank" rel="noopener" class="c-link">
                             <div class="c-link-icon"><i class="fab fa-linkedin-in"></i></div>
                             <div>
                                 <div class="c-link-lbl">LinkedIn</div>
                                 <div class="c-link-val">linkedin.com/in/rasel-ml</div>
                             </div>
                         </a>
-                        <a href="https://github.com/rasel-ml" target="_blank" class="c-link">
+                        <a href="https://github.com/rasel-ml" target="_blank" rel="noopener" class="c-link">
                             <div class="c-link-icon"><i class="fab fa-github"></i></div>
                             <div>
                                 <div class="c-link-lbl">GitHub</div>
                                 <div class="c-link-val">github.com/rasel-ml</div>
                             </div>
                         </a>
-                        
                     </div>
                 </div>
             </div>
@@ -603,17 +685,11 @@
     <!-- MODALS -->
     <div class="modal-bg" id="m1" onclick="closeM(event,'m1')">
         <div class="modal-box">
-            <!-- <div class="m-close-bar"> -->
-                <!-- <button class="m-close-btn" onclick="byId('m1')"><i class="fas fa-times"></i></button> -->
-            <!-- </div> -->
-            <!-- <img src="https://raw.githubusercontent.com/rasel-ml/FontLens/refs/heads/main/.github/raw/banner.jpg" class="m-img" alt=""> -->
 
-            <div style="position: relative;">
-                <img src="raw/fontlens.jpg"
-                     class="m-img" alt="">
-        
-                <button onclick="byId('m1')"
-                    style="position: absolute; top: 10px; right: 10px; width: 35px; height: 35px; border: 1px solid #ccc; border-radius: 50%; background: white; color: black; cursor: pointer;">
+            <div class="m-imgwrap">
+                <img src="res/fontlens.webp" class="m-img" alt="FontLens app screenshot">
+
+                <button class="m-close" onclick="closeModal('m1')" aria-label="Close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -624,13 +700,13 @@
                 <p class="m-txt">A fully offline Android font viewer and inspector app.</p>
                 <div class="m-txt"><strong>Features:</strong></div>
                 <ul class="m-list">
-                    <li>Completely offline. No permission required.</li>
+                    <li>Works completely offline and needs no permissions.</li>
                     <li>Browse &amp; preview local font files (.ttf, .otf)</li>
                     <li>Live editable font preview with size, bold, italic controls</li>
-                    <li>Glyph keyboard for showing all characters in the font</li>
+                    <li>Glyph keyboard to display every character in a font</li>
                     <li>Metadata viewer and editor</li>
                     <li>Favorites system</li>
-                    <li>Multiple sample texts support with configurable priority</li>
+                    <li>Support for multiple sample texts with configurable priority</li>
                 </ul>
                 <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/FontLens/releases/"><button class="p-tab"><strong>Get Apk</strong></button></a> <a href="https://github.com/rasel-ml/FontLens"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/FontLens"><button class="p-tab"><strong>Website</strong></button></a></div>
             </div>
@@ -639,12 +715,10 @@
 
     <div class="modal-bg" id="m2" onclick="closeM(event,'m2')">
         <div class="modal-box">
-            <div style="position: relative;">
-                <img src="raw/metromate.png"
-                     class="m-img" alt="">
-        
-                <button onclick="byId('m2')"
-                    style="position: absolute; top: 10px; right: 10px; width: 35px; height: 35px; border: 1px solid #ccc; border-radius: 50%; background: white; color: black; cursor: pointer;">
+            <div class="m-imgwrap">
+                <img src="res/metromate.webp" class="m-img" alt="MetroMate app screenshot">
+
+                <button class="m-close" onclick="closeModal('m2')" aria-label="Close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -654,7 +728,33 @@
                 <p class="m-txt">A convenient Android app for checking your Dhaka MRT Card balance on the go.</p>
                 <div class="m-txt"><strong>Features:</strong></div>
                 <ul class="m-list">
-                    <li>Completely offline.</li>
+                    <li>Works completely offline.</li>
+                    <li>Check your balance with just one tap.</li>
+                    <li>Works with both MRT Pass and Rapid Pass.</li>
+                    <li>View transaction history.</li>
+                    <li>Travel fare calculator.</li>
+                </ul>
+                <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/MetroMate/releases/"><button class="p-tab"><strong>Get Apk</strong></button></a> <a href="https://github.com/rasel-ml/MetroMate"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/MetroMate"><button class="p-tab"><strong>Website</strong></button></a></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-bg" id="m3" onclick="closeM(event,'m3')">
+        <div class="modal-box">
+            <div class="m-imgwrap">
+                <img src="res/weather.webp" class="m-img" alt="MetroMate app screenshot">
+
+                <button class="m-close" onclick="closeModal('m3')" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="m-body">
+                <div class="m-bdg">Android · Software · Kotlin</div>
+                <div class="m-title">MetroMate</div>
+                <p class="m-txt">A convenient Android app for checking your Dhaka MRT Card balance on the go.</p>
+                <div class="m-txt"><strong>Features:</strong></div>
+                <ul class="m-list">
+                    <li>Works completely offline.</li>
                     <li>Check your balance with just one tap.</li>
                     <li>Works with both MRT Pass and Rapid Pass.</li>
                     <li>View transaction history.</li>
@@ -665,4 +765,5 @@
         </div>
     </div>
 </body>
+
 </html>
