@@ -7,30 +7,30 @@
     <meta name="description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
     <meta property="og:title" content="Md. Rasel Molla | Portfolio">
     <meta property="og:description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
-    <meta property="og:image" content="https://rasel-ml.github.io/rasel-ml/res/self.webp">
+    <meta property="og:image" content="https://rasel-ml.github.io/res/images/self.webp">
     <meta property="og:url" content="https://rasel-ml.github.io">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Md. Rasel Molla | Portfolio">
     <meta name="twitter:description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
-    <meta name="twitter:image" content="https://example.com/images/preview.jpg">
+    <meta name="twitter:image" content="https://rasel-ml.github.io/res/images/self.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="res/favicon.ico">
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="res/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="res/css/icons.css" type="text/css" />
+    <script src="res/script/script.js" defer></script>
     <noscript><style>.rv{opacity:1;transform:none}</style></noscript>
 </head>
 
 <body>
-    <!-- TOPBAR MOBILE -->
-    <div class="topbar">
-        <span class="tb-brand" id="greeting">Welcome!</span>
-        <button class="burger" onclick="toggleDrawer()" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    <!-- TOPBAR -->
+    <div id="topbar">
+        <span id="greeting"></span>
+        <button onclick="toggleDrawer()"><i class="fas fa-bars"></i></button>
     </div>
 
     <!-- DRAWER -->
-    <div class="drawer" id="drawer">
+    <div id="drawer">
         <div class="drawer-bg" onclick="toggleDrawer()"></div>
         <div class="drawer-panel">
             <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close menu"><i class="fas fa-times"></i></button>
@@ -48,7 +48,7 @@
         <div class="sb-progress" id="sbProg"></div>
         <div class="sb-top">
             <div class="sb-avatar-ring">
-                <img src="res/self.webp" class="sb-avatar" alt="Md Rasel Molla">
+                <img src="res/images/self.webp" class="sb-avatar" alt="Md Rasel Molla">
                 <span class="sb-dot"></span>
             </div>
             <div class="sb-name">Md. Rasel Molla</div>
@@ -60,8 +60,8 @@
             </div>
         </div>
 
-        <nav class="sb-nav">
-            <span class="sb-nav-label">Navigation</span>
+        <nav>
+            <span>Navigation</span>
             <a href="#self" class="nav-link active"><i class="fas fa-house"></i><span>Home</span><span class="nav-bar"></span></a>
             <a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span><span class="nav-bar"></span></a>
             <a href="#skills" class="nav-link"><i class="fas fa-layer-group"></i><span>Skills</span><span class="nav-bar"></span></a>
@@ -71,69 +71,61 @@
         </nav>
 
         <div class="sb-bottom">
-            <div class="sb-quote">If (sad() === true){<br>sad().stop();<br>beAwesome();<br>}</div>
+            <div class="sb-quote"><span style="color:CornflowerBlue;">If</span>(<span style="color:Coral;">sad</span>() === <span style="color:DarkViolet;">true</span>){<br><span style="color:Coral;">&emsp;&emsp;sad</span>().<span style="color:Coral;">stop</span>();<br><span style="color:Coral;">&emsp;&emsp;beAwesome</span>();<br>}</div>
         </div>
     </aside>
 
     <!-- MAIN -->
-    <main class="main">
-
-        <!-- ── HERO ── -->
-        <section id="self">
-            <div class="hero-topo"></div>
-            <div class="hero-inner">
-                <div class="self-img-top">
-                    <div class="self-img-wraps">
-                        <div class="self-frame-1"></div>
-                        <div class="self-frame-2"></div>
-                        <img src="res/self.webp" class="self-photo-top" alt="Md Rasel Molla">
-                    </div>
+    <main>
+        <!-- MYSELF -->
+        <section id="myself">
+            <div class="topo-grid"></div>
+            <div class="inner-grid">
+                <div class="portrait-m">
+                    <div class="portrait-mf1"></div>
+                    <div class="portrait-mf2"></div>
+                    <img src="res/images/self.webp" alt="" onerror="this.parentElement.style.display='none'">
                 </div>
-                <div class="hero-text">
-                    <h1 class="hero-name" id="heroName"></h1>
-                    <div class="hero-role"></div>
-                    <p class="hero-desc">I'm a developer and data science enthusiast who enjoys exploring how software, data and digital tools work beneath the surface. I'm especially interested in app development, Python, data science and open-source software, and I learn best by building.</p>
-                    <p class="hero-desc2">I believe the best way to learn technology is to stay curious, experiment and build things that are genuinely useful. I like understanding not just how something works, but why. I'm always looking for ways to turn that curiosity into something practical, open and shareable.</p>
+                <div>
+                    <h1 id="name"></h1>
+                    <div class="divider"></div>
+                    <p class="desc">I'm a developer and data science enthusiast who enjoys exploring how software, data and digital tools work beneath the surface. I'm especially interested in app development, Python, data science and open-source software, and I learn best by building.</p>
+                    <p class="desc2">I believe the best way to learn technology is to stay curious, experiment and build things that are genuinely useful. I like understanding not just how something works, but why. I'm always looking for ways to turn that curiosity into something practical, open and shareable.</p>
 
                     <div class="stats">
-                        <div><a href="#projects">
-                                <div class="stat-n" data-target="2">2+</div>
+                        <div>
+                            <a href="#projects">
+                                <div class="stat-n" data-target="3"></div>
                             </a>
                             <div class="stat-l">Projects</div>
                         </div>
-                        <div><a href="#certifications">
+                        <div>
+                            <a href="#certifications">
                                 <div class="stat-n" data-target="6"></div>
                             </a>
                             <div class="stat-l">Certifications</div>
                         </div>
                     </div>
 
-                    <div class="hero-contacts">
-
+                    <div class="contacts">
                         <a href="mailto:mrasel21.glm@bu.ac.bd" title="Email"><i class="fas fa-envelope"></i></a>
                         <a href="https://github.com/rasel-ml" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/rasel-ml" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://wa.me/me.mrm" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-
                         <a href="https://t.me/me_mrm" title="Telegram"><i class="fa-regular fa-paper-plane"></i></a>
                         <a href="https://fb.me/me.mrm" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/qq_mrm" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
-
-
                     </div>
                 </div>
-
-                <div class="hero-img-side">
-                    <div class="hero-img-wrap">
-                        <div class="hero-frame1"></div>
-                        <div class="hero-frame2"></div>
-                        <img src="res/self.webp" class="hero-photo" alt="Md Rasel Molla">
-                    </div>
+                <div class="portrait-d">
+                    <div class="portrait-df1"></div>
+                    <div class="portrait-df2"></div>
+                    <img src="res/images/self.webp" alt="" onerror="this.parentElement.style.display='none'">
                 </div>
             </div>
         </section>
 
-        <!-- ── ABOUT ── -->
+        <!-- ABOUT -->
         <section id="about">
             <div class="sec-head rv">
                 <div class="sec-label">01</div>
@@ -169,21 +161,21 @@
                         <div class="info-val">Male</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv">
+                <div class="info-card pad-2 rv d4">
                     <div class="info-icon"><i style="color:LightCoral;" class="fa-solid fa-heart"></i></div>
                     <div>
                         <div class="info-lbl">Marital Status</div>
                         <div class="info-val">Single</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv">
+                <div class="info-card pad-2 rv d5">
                     <div class="info-icon"><i style="color:Crimson;" class="fa-solid fa-droplet"></i></div>
                     <div>
                         <div class="info-lbl">Blood Group</div>
                         <div class="info-val">A+</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv">
+                <div class="info-card pad-2 rv d6">
                     <div class="info-icon"><i style="color:SlateBlue;" class="fa-solid fa-globe"></i></div>
                     <div>
                         <div class="info-lbl">Nationality</div>
@@ -192,7 +184,7 @@
                 </div>
                 <div class="info-label">Present Address</div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card pad-2 rv d1">
                     <div class="info-icon"><i class="fa-solid fa-signs-post"></i></div>
                     <div>
                         <div class="info-lbl">Post office</div>
@@ -215,7 +207,7 @@
                         <div class="info-val">Barishal</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card pad-2 rv d4">
                     <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
                     <div>
                         <div class="info-lbl">Country</div>
@@ -225,12 +217,11 @@
 
             </div>
 
-
             <div id="education" class="info-cards">
 
                 <div class="info-label">SSC</div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card pad-2 rv d1">
                     <div class="info-icon"><i class="fa-solid fa-people-roof"></i></div>
                     <div>
                         <div class="info-lbl">Group</div>
@@ -238,7 +229,7 @@
                     </div>
                 </div>
 
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card pad-2 rv d2">
                     <div class="info-icon"><i class="fa-solid fa-award"></i></div>
                     <div>
                         <div class="info-lbl">Result</div>
@@ -252,7 +243,7 @@
                         <div class="info-val">2018</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card pad-2 rv d4">
                     <div class="info-icon"><i class="fa-solid fa-school-flag"></i></div>
                     <div>
                         <div class="info-lbl">School Name</div>
@@ -262,7 +253,7 @@
 
                 <div class="info-label">HSC</div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card pad-2 rv d1">
                     <div class="info-icon"><i class="fa-solid fa-people-roof"></i></div>
                     <div>
                         <div class="info-lbl">Group</div>
@@ -270,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card pad-2 rv d2">
                     <div class="info-icon"><i class="fa-solid fa-award"></i></div>
                     <div>
                         <div class="info-lbl">Result</div>
@@ -284,7 +275,7 @@
                         <div class="info-val">2020</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card pad-2 rv d4">
                     <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
                     <div>
                         <div class="info-lbl">College Name</div>
@@ -292,18 +283,16 @@
                     </div>
                 </div>
 
-
-
                 <div class="info-label">Graduation</div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card pad-2 rv d1">
                     <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div>
                         <div class="info-lbl">Major Subject</div>
                         <div class="info-val">Geology and Mining</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card pad-2 rv d2">
                     <div class="info-icon"><i class="fa-solid fa-business-time"></i></div>
                     <div>
                         <div class="info-lbl">Course Duration</div>
@@ -317,7 +306,7 @@
                         <div class="info-val">2025</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card pad-2 rv d4">
                     <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
                     <div>
                         <div class="info-lbl">Institution</div>
@@ -327,41 +316,56 @@
             </div>
             <div id="others" class="info-cards">
                 <div class="info-label">Language</div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card pad-2 rv d1">
                         <div class="info-icon"><b>অ</b></div>
                         <div>
-                            <div class="info-lbl">Primary Language</div>
                             <div class="info-val">Bangla (বাংলা)</div>
+                            <div class="info-des">Native proficiency</div>
                         </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card pad-2 rv d2">
                         <div class="info-icon"><b>A</b></div>
                         <div>
-                            <div class="info-lbl">Secondary Language</div>
                             <div class="info-val">English</div>
+                            <div class="info-des">Profesional working proficiency</div>
                         </div>
                 </div>
-                <div class="info-label">Hobbies</div>
-                <div class="info-card pad-2 rv d3">
-                        <div class="info-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                <div class="info-label">Likes &amp; Hobbies</div>
+                <div class="info-card pad-2 rv d1">
+                        <div class="info-icon"><i class="fas fa-code"></i></div>
                         <div>
-                            
-                            <div class="info-val">Notaphily</div>
-                            <div class="info-lbl">Collecting 100+ notes so far of 24 different country. 1 denomination note shdkjd</div>
+                            <div class="info-val">Programming</div>
+                            <div class="info-des">Love programming, solving problems, and turning ideas into useful things.</div>
                         </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <a href="https://en.numista.com/echanges/profil.php?id=381245">
+                <div class="info-card pad-2 rv d2">
                         <div class="info-icon"><i class="fa-solid fa-coins"></i></div>
                         <div>
-                            <!-- <div class="info-lbl">Primary Language</div> -->
-                            <div class="info-val">Numismatics</div>
+                            <div class="info-val">Numismatics &amp; Notaphily</div>
+                            <div class="info-des">Enjoy collecting coins and banknotes from different countries and eras, discovering the history behind each piece and the stories it carries through time.</div>
+                        </div>
+                        <div style="margin: auto 0; color:grey;"><i class="fa-solid fa-up-right-from-square"></i></div>
+                </div>
+                </a>
+                <div class="info-card pad-2 rv d3">
+                        <div class="info-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <div>
+                            <div class="info-val">Gardening</div>
+                            <div class="info-des">Enjoy gardening and nurturing plants.</div>
+                        </div>
+                </div>
+                <div class="info-card pad-2 rv d4">
+                        <div class="info-icon"><i class="fa-solid fa-route"></i></div>
+                        <div>
+                            <div class="info-val">Traveling</div>
+                            <div class="info-des">Exploring new places brings me a sense of inner peace.</div>
                         </div>
                 </div>
             </div>
-            
         </section>
 
-        <!-- ── SKILLS ── -->
+        <!-- SKILLS -->
         <section id="skills">
             <div class="sec-head rv">
                 <div class="sec-label">02</div>
@@ -370,38 +374,38 @@
             </div>
             <div class="skills-grid">
                 <div>
-                    <div class="skills-col-h rv">Core Skills</div>
+                    <div class="skills-col-h rv d1">Core Skills</div>
                     <div class="skill-item rv">
                         <div class="skill-top"><span class="skill-nm">Python (Pandas, NumPy, Matplotlib, Django)</span><span class="skill-pc">75%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="75"></div>
                         </div>
                     </div>
-                    <div class="skill-item rv d1">
+                    <div class="skill-item rv d2">
                         <div class="skill-top"><span class="skill-nm">Kotlin</span><span class="skill-pc">60%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="60"></div>
                         </div>
                     </div>
-                    <div class="skill-item rv d1">
+                    <div class="skill-item rv d3">
                         <div class="skill-top"><span class="skill-nm">Java</span><span class="skill-pc">50%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="50"></div>
                         </div>
                     </div>
-                    <div class="skill-item rv d1">
+                    <div class="skill-item rv d4">
                         <div class="skill-top"><span class="skill-nm">HTML5 &amp; CSS</span><span class="skill-pc">80%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="80"></div>
                         </div>
                     </div>
-                    <div class="skill-item rv d1">
+                    <div class="skill-item rv d5">
                         <div class="skill-top"><span class="skill-nm">ArcGIS</span><span class="skill-pc">60%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="60"></div>
                         </div>
                     </div>
-                    <div class="skill-item rv d1">
+                    <div class="skill-item rv d6">
                         <div class="skill-top"><span class="skill-nm">Office Software</span><span class="skill-pc">80%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="80"></div>
@@ -425,17 +429,17 @@
             </div>
         </section>
 
-        <!-- ── PROJECTS ── -->
+        <!-- PROJECTS -->
         <section id="projects">
             <div class="sec-head rv">
                 <div class="sec-label">03</div>
                 <h2 class="sec-title">My <em>Projects</em></h2>
-                <p class="sec-sub">Things I've built out of curiosity while learning and solving problems. I like keeping them open source, so others can pick them up and take them further.</p>
+                <p class="sec-sub">Things I've built out of curiosity while learning, experimenting and solving problems. I like keeping them open source, so others can pick them up and take them further.</p>
             </div>
             <div class="proj-grid">
 
-                <div class="proj-card rv" onclick="openM('m1')">
-                    <div class="proj-thumb-wrap"><img src="res/fontlens.webp" class="proj-thumb" alt="FontLens app screenshot">
+                <div class="proj-card rv d1" onclick="openM('m1')">
+                    <div class="proj-thumb-wrap"><img src="res/images/fontlens.webp" class="proj-thumb" alt="FontLens app screenshot">
                         <div class="proj-overlay"></div><span class="proj-bdg">Software</span>
                     </div>
                     <div class="proj-body">
@@ -446,8 +450,8 @@
                     </div>
                 </div>
 
-                <div class="proj-card rv d1" onclick="openM('m2')">
-                    <div class="proj-thumb-wrap"><img src="res/metromate.webp" class="proj-thumb" alt="MetroMate app screenshot">
+                <div class="proj-card rv d2" onclick="openM('m2')">
+                    <div class="proj-thumb-wrap"><img src="res/images/metromate.webp" class="proj-thumb" alt="MetroMate app screenshot">
                         <div class="proj-overlay"></div><span class="proj-bdg">Software</span>
                     </div>
                     <div class="proj-body">
@@ -458,21 +462,21 @@
                     </div>
                 </div>
                 
-                <div class="proj-card rv d1" onclick="openM('m3')">
-                    <div class="proj-thumb-wrap"><img src="res/weather.webp" class="proj-thumb" alt="MetroMate app screenshot">
+                <div class="proj-card rv d3" onclick="openM('m3')">
+                    <div class="proj-thumb-wrap"><img src="res/images/weather.webp" class="proj-thumb" alt="MetroMate app screenshot">
                         <div class="proj-overlay"></div><span class="proj-bdg">WebApp</span>
                     </div>
                     <div class="proj-body">
-                        <div class="proj-title">MetroMate</div>
-                        <div class="proj-desc">A convenient Android app for checking your Dhaka MRT Card balance on the go.</div>
-                        <div class="proj-tags"><span class="proj-tag">Android</span><span class="proj-tag">Kotlin</span></div>
+                        <div class="proj-title">Weather Prediction and Analysis Web App</div>
+                        <div class="proj-desc">A Django-based Python project for data science on weather prediction, analysis, and visualization using machine learning.</div>
+                        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Django</span></div>
                         <div class="proj-arrow"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ── CERTIFICATIONS ── -->
+        <!-- CERTIFICATIONS -->
         <section id="certifications">
             <div class="sec-head rv">
                 <div class="sec-label">04</div>
@@ -488,16 +492,16 @@
             </div>
 
             <div id="all" class="c-panel active">
-                <div class="c-item rv">
+                <div class="c-item rv d1">
                     <div class="c-icon g"><i class="fab fa-python"></i></div>
                     <div class="c-body">
                         <div class="c-name">Data Science with Python</div>
                         <div class="c-org">Enhancing Digital Government &amp; Economy Project (EDGE)</div>
-                        <div class="c-desc">80-hour training covering Python for data science, data manipulation, visualization, and applied machine learning.</div>
+                        <div class="c-desc">80-hour offline training covering Python for data science, data manipulation, visualization, and applied machine learning.</div>
                         <a href="https://training.edge.gov.bd/storage/certificate/student-training/certificate_68008088478a36.73100346.pdf"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d2">
                     <div class="c-icon g"><i class="fa-solid fa-chart-area"></i></div>
                     <div class="c-body">
                         <div class="c-name">Data Science, Machine Learning : Ultimate Course Bootcamp</div>
@@ -506,7 +510,7 @@
                         <a href="https://www.udemy.com/certificate/UC-c6fcc7fb-8507-4d08-a444-2315ee83007d/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d3">
                     <div class="c-icon r"><i class="fa-solid fa-file-code"></i></div>
                     <div class="c-body">
                         <div class="c-name">Java &amp; Python Programming Mastery: Learn to Code Like a Pro</div>
@@ -515,7 +519,7 @@
                         <a href="https://www.udemy.com/certificate/UC-b1816453-335a-4842-a882-a595b3678d1c/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d4">
                     <div class="c-icon r"><i class="fa-brands fa-java"></i></div>
                     <div class="c-body">
                         <div class="c-name">Java to Develop Programming Skills</div>
@@ -524,7 +528,7 @@
                         <a href="https://www.udemy.com/certificate/UC-3d09637b-94bb-4000-86f0-5c819a488328/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d5">
                     <div class="c-icon gl"><i class="fa-solid fa-file-word"></i></div>
                     <div class="c-body">
                         <div class="c-name">MS Word - Microsoft Word Course Beginner to Expert</div>
@@ -533,7 +537,7 @@
                         <a href="https://ude.my/UC-b6737138-7ce7-46a6-b9c1-67a6288b6e6a"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv d1">
+                <div class="c-item rv d6">
                     <div class="c-icon gl"><i class="fa-solid fa-file-excel"></i></div>
                     <div class="c-body">
                         <div class="c-name">Microsoft Excel 101 - Excel From Beginners to Advanced</div>
@@ -545,16 +549,16 @@
             </div>
 
             <div id="data" class="c-panel">
-                <div class="c-item rv">
+                <div class="c-item rv d1">
                     <div class="c-icon g"><i class="fab fa-python"></i></div>
                     <div class="c-body">
                         <div class="c-name">Data Science with Python</div>
                         <div class="c-org">Enhancing Digital Government &amp; Economy Project (EDGE)</div>
-                        <div class="c-desc">80-hour training covering Python for data science, data manipulation, visualization, and applied machine learning.</div>
+                        <div class="c-desc">80-hour offline training covering Python for data science, data manipulation, visualization, and applied machine learning.</div>
                         <a href="https://training.edge.gov.bd/storage/certificate/student-training/certificate_68008088478a36.73100346.pdf"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d2">
                     <div class="c-icon g"><i class="fa-solid fa-chart-area"></i></div>
                     <div class="c-body">
                         <div class="c-name">Data Science, Machine Learning : Ultimate Course Bootcamp</div>
@@ -566,7 +570,7 @@
             </div>
 
             <div id="prog" class="c-panel">
-                <div class="c-item rv">
+                <div class="c-item rv d1">
                     <div class="c-icon r"><i class="fa-solid fa-file-code"></i></div>
                     <div class="c-body">
                         <div class="c-name">Java &amp; Python Programming Mastery: Learn to Code Like a Pro</div>
@@ -575,7 +579,7 @@
                         <a href="https://www.udemy.com/certificate/UC-b1816453-335a-4842-a882-a595b3678d1c/"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d2">
                     <div class="c-icon r"><i class="fa-brands fa-java"></i></div>
                     <div class="c-body">
                         <div class="c-name">Java to Develop Programming Skills</div>
@@ -587,7 +591,7 @@
             </div>
 
             <div id="office" class="c-panel">
-                <div class="c-item rv">
+                <div class="c-item rv d1">
                     <div class="c-icon gl"><i class="fa-solid fa-file-word"></i></div>
                     <div class="c-body">
                         <div class="c-name">MS Word - Microsoft Word Course Beginner to Expert</div>
@@ -596,7 +600,7 @@
                         <a href="https://ude.my/UC-b6737138-7ce7-46a6-b9c1-67a6288b6e6a"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
-                <div class="c-item rv">
+                <div class="c-item rv d2">
                     <div class="c-icon gl"><i class="fa-solid fa-file-excel"></i></div>
                     <div class="c-body">
                         <div class="c-name">Microsoft Excel 101 - Excel From Beginners to Advanced</div>
@@ -608,7 +612,7 @@
             </div>
         </section>
 
-        <!-- ── CONTACT ── -->
+        <!-- CONTACT -->
         <section id="contact">
             <div class="sec-head rv">
                 <div class="sec-label">05</div>
@@ -633,11 +637,11 @@
                                 <a class="c-link-val" href="mailto:msg4mrm@gmail.com">msg4mrm@gmail.com</a>
                             </div>
                         </div>
-                        <a href="https://wa.me/8801XXXXXXXXX" class="c-link">
+                        <a href="https://wa.me/me.mrm" class="c-link">
                             <div class="c-link-icon"><i class="fa-brands fa-whatsapp"></i></div>
                             <div>
                                 <div class="c-link-lbl">WhatsApp</div>
-                                <div class="c-link-val">wa.me/8801XXXXXXXXX</div>
+                                <div class="c-link-val">wa.me/me.mrm</div>
                             </div>
                         </a>
                         <a href="https://fb.me/me.mrm" class="c-link">
@@ -687,7 +691,7 @@
         <div class="modal-box">
 
             <div class="m-imgwrap">
-                <img src="res/fontlens.webp" class="m-img" alt="FontLens app screenshot">
+                <img src="res/images/fontlens.webp" class="m-img" alt="FontLens app screenshot">
 
                 <button class="m-close" onclick="closeModal('m1')" aria-label="Close">
                     <i class="fas fa-times"></i>
@@ -716,7 +720,7 @@
     <div class="modal-bg" id="m2" onclick="closeM(event,'m2')">
         <div class="modal-box">
             <div class="m-imgwrap">
-                <img src="res/metromate.webp" class="m-img" alt="MetroMate app screenshot">
+                <img src="res/images/metromate.webp" class="m-img" alt="MetroMate app screenshot">
 
                 <button class="m-close" onclick="closeModal('m2')" aria-label="Close">
                     <i class="fas fa-times"></i>
@@ -742,25 +746,23 @@
     <div class="modal-bg" id="m3" onclick="closeM(event,'m3')">
         <div class="modal-box">
             <div class="m-imgwrap">
-                <img src="res/weather.webp" class="m-img" alt="MetroMate app screenshot">
+                <img src="res/images/weather.webp" class="m-img" alt="MetroMate app screenshot">
 
                 <button class="m-close" onclick="closeModal('m3')" aria-label="Close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="m-body">
-                <div class="m-bdg">Android · Software · Kotlin</div>
-                <div class="m-title">MetroMate</div>
-                <p class="m-txt">A convenient Android app for checking your Dhaka MRT Card balance on the go.</p>
+                <div class="m-bdg">Python · Django · Notebook</div>
+                <div class="m-title">Weather Prediction and Analysis Web App</div>
+                <p class="m-txt">A Django-based Python project for data science on weather prediction, analysis, and visualization using machine learning.</p>
                 <div class="m-txt"><strong>Features:</strong></div>
                 <ul class="m-list">
-                    <li>Works completely offline.</li>
-                    <li>Check your balance with just one tap.</li>
-                    <li>Works with both MRT Pass and Rapid Pass.</li>
-                    <li>View transaction history.</li>
-                    <li>Travel fare calculator.</li>
+                    <li>Weather Prediction</li>
+                    <li>Weather Visualization</li>
+                    <li>Weather Analysis</li>
                 </ul>
-                <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/MetroMate/releases/"><button class="p-tab"><strong>Get Apk</strong></button></a> <a href="https://github.com/rasel-ml/MetroMate"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/MetroMate"><button class="p-tab"><strong>Website</strong></button></a></div>
+                <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/EDGE-DataScience-Project"><button class="p-tab"><strong>Visit WebApp</strong></button></a></div>
             </div>
         </div>
     </div>

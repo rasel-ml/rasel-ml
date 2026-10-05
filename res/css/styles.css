@@ -15,22 +15,6 @@
     --gold: #ee6c4d;
     --gold-lt: #f4a694;
     --red: #873b30;
-    /*--bg:#f4f1eb;*/
-    /*--bg2:#ede9e0;*/
-    /*--bg3:#e5e0d4;*/
-    /*--surface:#ffffff;*/
-    /*--border:#ddd8cc;*/
-    /*--border2:#c9c2b2;*/
-    /*--ink:#1c1a16;*/
-    /*--ink2:#3a3630;*/
-    /*--ink3:#635d54;*/
-    /*--muted:#9a9186;*/
-    /*--accent:#2a5c45;*/
-    /*--accent2:#346e55;*/
-    /*--accent-lt:#eaf2ed;*/
-    /*--gold:#a07828;*/
-    /*--gold-lt:#f6edd6;*/
-    /*--red:#7a3020;*/
     --sidebar-w: 300px;
     --r: 12px;
     --r-lg: 20px;
@@ -40,9 +24,15 @@
     --t: .36s cubic-bezier(.4, 0, .2, 1);
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
 @font-face {
     font-family: 'DMSerif';
-    src: url('/res/DMSerifDisplay-Regular.woff2') format('woff2');
+    src: url('../webfonts/DMSerifDisplay-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -50,7 +40,7 @@
 
 @font-face {
     font-family: 'DMSans';
-    src: url('/res/DMSans-Regular.woff2') format('woff2');
+    src: url('../webfonts/DMSans-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -58,18 +48,10 @@
 
 @font-face {
     font-family: 'DMMono';
-    src: url('/res/DMMono-Regular.woff2') format('woff2');
+    src: url('../webfonts/DMMono-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
 }
 
 
@@ -87,15 +69,9 @@ body {
     line-height: 1
 }
 
-/* grain */
-body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");*/
-    pointer-events: none;
-    z-index: 9000;
-    opacity: .55
+a {
+    text-decoration: none;
+    color: var(--ink);
 }
 
 /* scrollbar */
@@ -188,8 +164,7 @@ body::after {
 
 @keyframes blink {
 
-    0%,
-    100% {
+    0%, 100% {
         opacity: 1
     }
 
@@ -235,7 +210,7 @@ body::after {
 }
 
 /* nav */
-.sb-nav {
+nav {
     flex: 1;
     padding: 18px 14px;
     display: flex;
@@ -243,7 +218,7 @@ body::after {
     gap: 2px
 }
 
-.sb-nav-label {
+nav > span {
     font-size: .58rem;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -338,7 +313,7 @@ body::after {
 }
 
 /* ═══════════ TOPBAR MOBILE ═══════════ */
-.topbar {
+#topbar {
     display: none;
     position: fixed;
     top: 0;
@@ -353,14 +328,14 @@ body::after {
     z-index: 200
 }
 
-.tb-brand {
+#topbar span {
     font-family: 'DMSerif', serif;
     font-size: 1.05rem;
     font-weight: 700;
     color: var(--ink)
 }
 
-.burger {
+#topbar button {
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -375,14 +350,14 @@ body::after {
 }
 
 /* mobile drawer */
-.drawer {
+#drawer {
     display: none;
     position: fixed;
     inset: 0;
     z-index: 300
 }
 
-.drawer.open {
+#drawer.open {
     display: block
 }
 
@@ -426,7 +401,7 @@ body::after {
 }
 
 /* ═══════════ MAIN ═══════════ */
-.main {
+main {
     margin-left: var(--sidebar-w);
     min-height: 100vh
 }
@@ -441,7 +416,7 @@ section {
 }
 
 /* alternating bg */
-#self,
+#myself,
 #skills,
 #certifications {
     background: var(--bg)
@@ -501,7 +476,7 @@ section {
 }
 
 /* ═══════════ HERO ═══════════ */
-#self {
+#myself {
     min-height: 100vh;
     min-height: 100svh;
     display: flex;
@@ -511,7 +486,7 @@ section {
 }
 
 /* topo grid bg */
-.hero-topo {
+.topo-grid {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -530,7 +505,7 @@ section {
     }
 }
 
-.hero-inner {
+.inner-grid {
     position: relative;
     z-index: 1;
     display: grid;
@@ -566,7 +541,7 @@ section {
 }
 
 /* Animated letter name */
-.hero-name {
+#name {
     font-family: 'DMSerif', serif;
     font-size: clamp(2.8rem, 5vw, 4.9rem);
     font-weight: 700;
@@ -575,12 +550,12 @@ section {
     margin-bottom: 7px
 }
 
-.hero-name .word {
+#name .word {
     display: inline-block;
     white-space: nowrap
 }
 
-.hero-name .char {
+#name .char {
     display: inline-block;
     opacity: 0;
     transform: translateY(30px);
@@ -594,28 +569,21 @@ section {
     }
 }
 
-.hero-role {
-    font-family: 'DMSerif', serif;
-    font-size: clamp(.95rem, 1.8vw, 1.3rem);
-    font-style: italic;
+.divider {
+    content: '';
+    flex: 1;
+    max-width: 170px;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--accent), transparent);
     color: var(--accent);
     margin-bottom: 26px;
     display: flex;
     align-items: center;
     gap: 12px;
     animation: fadeUp .9s .55s ease both;
-    font-weight: 500
 }
 
-.hero-role::after {
-    content: '';
-    flex: 1;
-    max-width: 170px;
-    height: 1.5px;
-    background: linear-gradient(90deg, var(--accent), transparent)
-}
-
-.hero-desc {
+.desc {
     font-size: .95rem;
     color: var(--ink3);
     line-height: 1.88;
@@ -625,7 +593,7 @@ section {
     font-weight: 400
 }
 
-.hero-desc2 {
+.desc2 {
     font-size: .87rem;
     color: var(--muted);
     line-height: 1.82;
@@ -635,8 +603,7 @@ section {
     font-weight: 400
 }
 
-
-.hero-contacts {
+.contacts {
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
@@ -644,7 +611,7 @@ section {
     animation: fadeUp .9s .96s ease both
 }
 
-.hero-contacts a {
+.contacts a {
     width: 40px;
     height: 40px;
     border-radius: 9px;
@@ -660,7 +627,7 @@ section {
     box-shadow: var(--sh)
 }
 
-.hero-contacts a:hover {
+.contacts a:hover {
     background: var(--accent-lt);
     border-color: rgba(42, 92, 69, .22);
     color: var(--accent);
@@ -700,18 +667,15 @@ section {
 
 
 
-.self-img-top {
+.portrait-m {
     display: none;
     animation: fadeLeft .9s .45s ease both;
-}
-
-.self-img-wraps {
     position: relative;
     width: 170px;
     height: 200px
 }
 
-.self-frame-1 {
+.portrait-mf1 {
     position: absolute;
     inset: 0;
     border-radius: 15px 70px 15px 15px;
@@ -720,7 +684,7 @@ section {
     opacity: .28
 }
 
-.self-frame-2 {
+.portrait-mf2 {
     position: absolute;
     inset: 0;
     border-radius: 15px 70px 15px 15px;
@@ -729,7 +693,7 @@ section {
     opacity: .18
 }
 
-.self-photo-top {
+.portrait-m img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -781,18 +745,15 @@ section {
     border-bottom: 1px solid var(--border)
 }
 
-/* hero image */
-.hero-img-side {
-    animation: fadeLeft .9s .45s ease both
-}
-
-.hero-img-wrap {
+/* desktop image */
+.portrait-d {
+    animation: fadeLeft .9s .45s ease both;
     position: relative;
     width: 215px;
     height: 268px
 }
 
-.hero-frame1 {
+.portrait-df1 {
     position: absolute;
     inset: 0;
     border-radius: 20px 20px 80px 20px;
@@ -801,7 +762,7 @@ section {
     opacity: .28
 }
 
-.hero-frame2 {
+.portrait-df2 {
     position: absolute;
     inset: 0;
     border-radius: 20px 20px 80px 20px;
@@ -810,7 +771,7 @@ section {
     opacity: .18
 }
 
-.hero-photo {
+.portrait-d img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -890,6 +851,16 @@ section {
     margin-bottom: 3px
 }
 
+.info-des {
+    font-size: .7rem;
+    letter-spacing: .13em;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 3px;
+    padding-top: 3px;
+    line-height: 1.4
+}
+
 .info-val {
     font-size: .86rem;
     color: var(--ink2);
@@ -946,12 +917,12 @@ section {
     /*font-family: 'DMMono', monospace;*/
     font-size: .7rem;
     color: var(--accent);
-    font-weight: 500
+    font-weight: 700
 }
 
 .skill-track {
     height: 6px;
-    background: var(--bg3);
+    background: var(--bg2);
     border-radius: 50px;
     overflow: hidden
 }
@@ -1014,13 +985,13 @@ section {
     border: 1px solid var(--border);
     border-radius: 9px;
     font-size: .77rem;
-    color: var(--ink3);
+    color: var(--ink2);
     font-weight: 500;
     transition: all var(--t);
     display: flex;
     align-items: center;
     gap: 6px;
-    cursor: default
+    cursor: default;
 }
 
 .tool i {
@@ -1190,7 +1161,7 @@ section {
     padding: 8px 15px;
     border-radius: 50px;
     border: 1.5px solid var(--border);
-    background: #fff;
+    background: var(--surface);
     color: var(--ink3);
     font-size: .81rem;
     font-weight: 600;
@@ -1254,7 +1225,7 @@ section {
     display: flex;
     gap: 18px;
     padding: 20px 22px;
-    background: #fff;
+    background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--r);
     margin-bottom: 12px;
@@ -1427,6 +1398,13 @@ a.c-link-val:hover {
     transition-delay: .34s
 }
 
+.rv.d5 {
+    transition-delay: .42s
+}
+
+.rv.d6 {
+    transition-delay: .5s
+}
 /* ═══════════ MODAL ═══════════ */
 .modal-bg {
     display: none;
@@ -1588,11 +1566,11 @@ a.c-link-val:hover {
         padding: 80px 44px
     }
 
-    .hero-inner {
+    .inner-grid {
         gap: 38px
     }
 
-    .hero-img-wrap {
+    .portrait-d {
         width: 188px;
         height: 235px
     }
@@ -1607,16 +1585,16 @@ a.c-link-val:hover {
         display: none
     }
 
-    .topbar {
+    #topbar {
         display: flex
     }
 
-    .main {
+    main {
         margin-left: 0;
         padding-top: 56px
     }
 
-    #self {
+    #myself {
         min-height: calc(100vh - 56px);
         min-height: calc(100svh - 56px)
     }
@@ -1625,15 +1603,15 @@ a.c-link-val:hover {
         padding: 62px 40px
     }
 
-    .hero-inner {
+    .inner-grid {
         grid-template-columns: 1fr
     }
 
-    .hero-img-side {
+    .portrait-d {
         display: none
     }
 
-    .self-img-top {
+    .portrait-m {
         display: block
     }
 
@@ -1658,7 +1636,7 @@ a.c-link-val:hover {
         padding: 56px 20px
     }
 
-    .hero-name {
+    #name {
         font-size: 2.5rem
     }
 
@@ -1681,7 +1659,7 @@ a.c-link-val:hover {
 }
 
 @media(max-width:360px) {
-    .hero-name {
+    #name {
         font-size: 2.2rem
     }
 
@@ -1704,7 +1682,7 @@ a.c-link-val:hover {
         transition-duration: .01ms !important
     }
 
-    .hero-name .char {
+    #name .char {
         opacity: 1;
         transform: none
     }

@@ -1,7 +1,7 @@
 /* ── Greeting + animated name ── */
 (function() {
     const hour = new Date().getHours();
-    let greeting = 'Welcome!';
+    let greeting = 'Welcome !!';
     if (hour >= 5 && hour < 12) greeting = 'Good Morning !!';
     else if (hour >= 12 && hour < 17) greeting = 'Good Afternoon !!';
     else if (hour >= 17 && hour < 21) greeting = 'Good Evening !!';
@@ -9,7 +9,7 @@
     if (g) g.textContent = greeting;
 
     const full = 'Md. Rasel Molla';
-    const el = document.getElementById('heroName');
+    const el = document.getElementById('name');
     if (!el) return;
     el.setAttribute('aria-label', full);
     let i = 0;
@@ -48,7 +48,7 @@ function animateCounters() {
     });
 }
 let counted = false;
-const heroSec = document.getElementById('self');
+const heroSec = document.getElementById('myself');
 if (heroSec) {
     // threshold 0.25: the hero can be taller than the screen on phones
     new IntersectionObserver(([e], obs) => {
