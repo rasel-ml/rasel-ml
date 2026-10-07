@@ -4,29 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Md. Rasel Molla | Portfolio</title>
-    <meta name="description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
+    <meta name="description" content="An Android app developer and data science enthusiast from Bangladesh.">
+    <meta name="author" content="Md. Rasel Molla">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E8C7F">
     <meta property="og:title" content="Md. Rasel Molla | Portfolio">
-    <meta property="og:description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
-    <meta property="og:image" content="https://rasel-ml.github.io/res/images/self.webp">
+    <meta property="og:description" content="An Android app developer and data science enthusiast from Bangladesh.">
+    <meta property="og:image" content="https://rasel-ml.github.io/res/images/og.jpg">
     <meta property="og:url" content="https://rasel-ml.github.io">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Md. Rasel Molla | Portfolio">
-    <meta name="twitter:description" content="Portfolio of Md. Rasel Molla, app developer and data science enthusiast.">
-    <meta name="twitter:image" content="https://rasel-ml.github.io/res/images/self.webp">
+    <meta name="twitter:description" content="An Android app developer and data science enthusiast from Bangladesh.">
+    <meta name="twitter:image" content="https://rasel-ml.github.io/res/images/og.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <link rel="canonical" href="https://rasel-ml.github.io/">
+    <link rel="apple-touch-icon" href="res/images/apple-touch-icon.png">
     <link rel="stylesheet" href="res/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="res/css/icons.css" type="text/css" />
+    <link rel="preload" href="res/webfonts/DMSerifDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <script src="res/script/script.js" defer></script>
-    <noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+    <noscript>
+        <style>
+            .rv{opacity:1;transform:none}
+            #name{content: 'Md. Rasel Molla';}
+        </style>
+    </noscript>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md. Rasel Molla",
+      "url": "https://rasel-ml.github.io/",
+      "image": "https://rasel-ml.github.io/res/images/og.jpg",
+      "jobTitle": "Android & Data Science Developer",
+      "alumniOf": "University of Barishal",
+      "nationality": "Bangladeshi",
+      "email": "mailto:mrasel21.glm@bu.ac.bd",
+      "sameAs": [
+        "https://github.com/rasel-ml",
+        "https://www.linkedin.com/in/rasel-ml/"
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <!-- TOPBAR -->
     <div id="topbar">
-        <span id="greeting"></span>
-        <button onclick="toggleDrawer()"><i class="fas fa-bars"></i></button>
+        <span id="greeting">Welcome !!</span>
+        <button onclick="toggleDrawer()" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
     </div>
 
     <!-- DRAWER -->
@@ -34,7 +62,7 @@
         <div class="drawer-bg" onclick="toggleDrawer()"></div>
         <div class="drawer-panel">
             <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close menu"><i class="fas fa-times"></i></button>
-            <a href="#self" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-house"></i><span>Home</span><span class="nav-bar"></span></a>
+            <a href="#myself" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-house"></i><span>Home</span><span class="nav-bar"></span></a>
             <a href="#about" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-user"></i><span>About</span><span class="nav-bar"></span></a>
             <a href="#skills" class="nav-link" onclick="toggleDrawer()"><i class="fas fa-layer-group"></i><span>Skills</span><span class="nav-bar"></span></a>
             <a href="#projects" class="nav-link" onclick="toggleDrawer()"><i class="fa-solid fa-diagram-project"></i><span>Projects</span><span class="nav-bar"></span></a>
@@ -48,30 +76,23 @@
         <div class="sb-progress" id="sbProg"></div>
         <div class="sb-top">
             <div class="sb-avatar-ring">
-                <img src="res/images/self.webp" class="sb-avatar" alt="Md Rasel Molla">
+                <img src="res/images/self.webp" class="sb-avatar" alt="" onerror="this.parentElement.style.display='none'">
                 <span class="sb-dot"></span>
             </div>
             <div class="sb-name">Md. Rasel Molla</div>
             <div class="sb-role">Developer · Learner · Explorer</div>
-            <div class="sb-chips">
-                <span class="sb-chip">Android Dev</span>
-                <span class="sb-chip">Data Science</span>
-                <span class="sb-chip">Vibe Coding</span>
-            </div>
         </div>
-
         <nav>
             <span>Navigation</span>
-            <a href="#self" class="nav-link active"><i class="fas fa-house"></i><span>Home</span><span class="nav-bar"></span></a>
+            <a href="#myself" class="nav-link active"><i class="fas fa-house"></i><span>Home</span><span class="nav-bar"></span></a>
             <a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span><span class="nav-bar"></span></a>
             <a href="#skills" class="nav-link"><i class="fas fa-layer-group"></i><span>Skills</span><span class="nav-bar"></span></a>
             <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i><span>Projects</span><span class="nav-bar"></span></a>
             <a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i><span>Certifications</span><span class="nav-bar"></span></a>
             <a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i><span>Contact</span><span class="nav-bar"></span></a>
         </nav>
-
         <div class="sb-bottom">
-            <div class="sb-quote"><span style="color:CornflowerBlue;">If</span>(<span style="color:Coral;">sad</span>() === <span style="color:DarkViolet;">true</span>){<br><span style="color:Coral;">&emsp;&emsp;sad</span>().<span style="color:Coral;">stop</span>();<br><span style="color:Coral;">&emsp;&emsp;beAwesome</span>();<br>}</div>
+            <div class="sb-quote"><span style="color:CornflowerBlue;">if</span>(<span style="color:Coral;">sad</span>() === <span style="color:DarkViolet;">true</span>){<br><span style="color:Coral;">&emsp;&emsp;sad</span>().<span style="color:Coral;">stop</span>();<br><span style="color:Coral;">&emsp;&emsp;beAwesome</span>();<br>}</div>
         </div>
     </aside>
 
@@ -139,43 +160,43 @@
             </div>
 
             <div id="personal" class="info-cards active">
-            <div class="info-label">Basic Info</div>
-                <div class="info-card pad-2 rv d1">
+                <div class="info-label">Basic Info</div>
+                <div class="info-card rv d1">
                     <div class="info-icon"><i style="color:HotPink;" class="fa-solid fa-cake-candles"></i></div>
                     <div>
-                        <div class="info-lbl">Date Of Birth</div>
+                        <div class="info-lbl">Date of Birth</div>
                         <div class="info-val">28 September</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card rv d2">
                     <div class="info-icon"><i style="color:SeaGreen;" class="fa-solid fa-star-and-crescent"></i></div>
                     <div>
                         <div class="info-lbl">Religion</div>
                         <div class="info-val">Islam</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card rv d3">
                     <div class="info-icon"><i style="color:purple;" class="fa-solid fa-mars"></i></div>
                     <div>
                         <div class="info-lbl">Gender</div>
                         <div class="info-val">Male</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d4">
+                <div class="info-card rv d4">
                     <div class="info-icon"><i style="color:LightCoral;" class="fa-solid fa-heart"></i></div>
                     <div>
                         <div class="info-lbl">Marital Status</div>
                         <div class="info-val">Single</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d5">
+                <div class="info-card rv d5">
                     <div class="info-icon"><i style="color:Crimson;" class="fa-solid fa-droplet"></i></div>
                     <div>
                         <div class="info-lbl">Blood Group</div>
                         <div class="info-val">A+</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d6">
+                <div class="info-card rv d6">
                     <div class="info-icon"><i style="color:SlateBlue;" class="fa-solid fa-globe"></i></div>
                     <div>
                         <div class="info-lbl">Nationality</div>
@@ -184,15 +205,15 @@
                 </div>
                 <div class="info-label">Present Address</div>
 
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card rv d1">
                     <div class="info-icon"><i class="fa-solid fa-signs-post"></i></div>
                     <div>
-                        <div class="info-lbl">Post office</div>
+                        <div class="info-lbl">Post Office</div>
                         <div class="info-val">Barishal Sadar</div>
                     </div>
                 </div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card rv d2">
                     <div class="info-icon"><i class="fa-solid fa-envelopes-bulk"></i></div>
                     <div>
                         <div class="info-lbl">Post Code</div>
@@ -200,14 +221,14 @@
                     </div>
                 </div>
 
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card rv d3">
                     <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div>
                         <div class="info-lbl">Division</div>
                         <div class="info-val">Barishal</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d4">
+                <div class="info-card rv d4">
                     <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
                     <div>
                         <div class="info-lbl">Country</div>
@@ -221,7 +242,7 @@
 
                 <div class="info-label">SSC</div>
 
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card rv d1">
                     <div class="info-icon"><i class="fa-solid fa-people-roof"></i></div>
                     <div>
                         <div class="info-lbl">Group</div>
@@ -229,21 +250,21 @@
                     </div>
                 </div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card rv d2">
                     <div class="info-icon"><i class="fa-solid fa-award"></i></div>
                     <div>
                         <div class="info-lbl">Result</div>
                         <div class="info-val">GPA 5.00</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card rv d3">
                     <div class="info-icon"><i class="fa-solid fa-calendar-days"></i></div>
                     <div>
                         <div class="info-lbl">Passing Year</div>
                         <div class="info-val">2018</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d4">
+                <div class="info-card rv d4">
                     <div class="info-icon"><i class="fa-solid fa-school-flag"></i></div>
                     <div>
                         <div class="info-lbl">School Name</div>
@@ -253,7 +274,7 @@
 
                 <div class="info-label">HSC</div>
 
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card rv d1">
                     <div class="info-icon"><i class="fa-solid fa-people-roof"></i></div>
                     <div>
                         <div class="info-lbl">Group</div>
@@ -261,21 +282,21 @@
                     </div>
                 </div>
 
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card rv d2">
                     <div class="info-icon"><i class="fa-solid fa-award"></i></div>
                     <div>
                         <div class="info-lbl">Result</div>
                         <div class="info-val">GPA 5.00</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card rv d3">
                     <div class="info-icon"><i class="fa-solid fa-calendar-days"></i></div>
                     <div>
                         <div class="info-lbl">Passing Year</div>
                         <div class="info-val">2020</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d4">
+                <div class="info-card rv d4">
                     <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
                     <div>
                         <div class="info-lbl">College Name</div>
@@ -285,28 +306,36 @@
 
                 <div class="info-label">Graduation</div>
 
-                <div class="info-card pad-2 rv d1">
+                <div class="info-card rv d1">
+                    <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <div class="info-lbl">Degree</div>
+                        <div class="info-val">BSc (Honours)</div>
+                    </div>
+                </div>
+                
+                <div class="info-card rv d2">
                     <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div>
                         <div class="info-lbl">Major Subject</div>
                         <div class="info-val">Geology and Mining</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d2">
+                <div class="info-card rv d3">
                     <div class="info-icon"><i class="fa-solid fa-business-time"></i></div>
                     <div>
                         <div class="info-lbl">Course Duration</div>
                         <div class="info-val">4 Years</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d3">
+                <div class="info-card rv d4">
                     <div class="info-icon"><i class="fa-solid fa-calendar-days"></i></div>
                     <div>
                         <div class="info-lbl">Passing Year</div>
-                        <div class="info-val">2025</div>
+                        <div class="info-val">2024</div>
                     </div>
                 </div>
-                <div class="info-card pad-2 rv d4">
+                <div class="info-card rv d5">
                     <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
                     <div>
                         <div class="info-lbl">Institution</div>
@@ -316,52 +345,62 @@
             </div>
             <div id="others" class="info-cards">
                 <div class="info-label">Language</div>
-                <div class="info-card pad-2 rv d1">
-                        <div class="info-icon"><b>অ</b></div>
-                        <div>
-                            <div class="info-val">Bangla (বাংলা)</div>
-                            <div class="info-des">Native proficiency</div>
-                        </div>
+                <div class="info-card rv d1">
+                    <div class="info-icon"><b>অ</b></div>
+                    <div>
+                        <div class="info-val">Bangla (বাংলা)</div>
+                        <div class="info-des">Native proficiency</div>
+                    </div>
                 </div>
-                <div class="info-card pad-2 rv d2">
-                        <div class="info-icon"><b>A</b></div>
-                        <div>
-                            <div class="info-val">English</div>
-                            <div class="info-des">Profesional working proficiency</div>
-                        </div>
+                <div class="info-card rv d2">
+                    <div class="info-icon"><b>A</b></div>
+                    <div>
+                        <div class="info-val">English</div>
+                        <div class="info-des">Professional working proficiency</div>
+                    </div>
                 </div>
                 <div class="info-label">Likes &amp; Hobbies</div>
-                <div class="info-card pad-2 rv d1">
-                        <div class="info-icon"><i class="fas fa-code"></i></div>
-                        <div>
-                            <div class="info-val">Programming</div>
-                            <div class="info-des">Love programming, solving problems, and turning ideas into useful things.</div>
-                        </div>
+                <div class="info-card rv d1">
+                    <div class="info-icon"><i class="fa-solid fa-route"></i></div>
+                    <div>
+                        <div class="info-val">Traveling</div>
+                        <div class="info-des">Exploring new places brings me a sense of inner peace.</div>
+                    </div>
                 </div>
-                <a href="https://en.numista.com/echanges/profil.php?id=381245">
-                <div class="info-card pad-2 rv d2">
-                        <div class="info-icon"><i class="fa-solid fa-coins"></i></div>
-                        <div>
-                            <div class="info-val">Numismatics &amp; Notaphily</div>
-                            <div class="info-des">Enjoy collecting coins and banknotes from different countries and eras, discovering the history behind each piece and the stories it carries through time.</div>
-                        </div>
-                        <div style="margin: auto 0; color:grey;"><i class="fa-solid fa-up-right-from-square"></i></div>
+                <div class="info-card rv d2">
+                    <div class="info-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <div>
+                        <div class="info-val">Gardening</div>
+                        <div class="info-des">Enjoy gardening and nurturing plants.</div>
+                    </div>
                 </div>
-                </a>
-                <div class="info-card pad-2 rv d3">
-                        <div class="info-icon"><i class="fa-solid fa-seedling"></i></div>
-                        <div>
-                            <div class="info-val">Gardening</div>
-                            <div class="info-des">Enjoy gardening and nurturing plants.</div>
-                        </div>
+                
+                <div class="info-card rv d3">
+                    <div class="info-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                        <div class="info-val">Programming</div>
+                        <div class="info-des">Love programming, solving problems, and turning ideas into useful things.</div>
+                    </div>
                 </div>
-                <div class="info-card pad-2 rv d4">
-                        <div class="info-icon"><i class="fa-solid fa-route"></i></div>
-                        <div>
-                            <div class="info-val">Traveling</div>
-                            <div class="info-des">Exploring new places brings me a sense of inner peace.</div>
-                        </div>
+
+                <div class="info-card rv d4">
+                    <div class="info-icon"><i class="fa-regular fa-camera"></i></div>
+                    <div>
+                        <div class="info-val">Mobile Photography</div>
+                        <div class="info-des">Turning moments into lasting memories.</div>
+                        <a href="https://rasel-ml.github.io/mobile-photography" class="info-b">Explore Clicks <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
+
+                <div class="info-card rv d5">
+                    <div class="info-icon"><i class="fa-solid fa-coins"></i></div>
+                    <div>
+                        <div class="info-val">Numismatics &amp; Notaphily</div>
+                        <div class="info-des">Enjoy collecting coins and banknotes from different countries and eras, discovering the history behind each piece and the stories it carries through time.</div>
+                        <a href="https://en.numista.com/echanges/profil.php?id=381245" class="info-b">View Collection <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -376,9 +415,9 @@
                 <div>
                     <div class="skills-col-h rv d1">Core Skills</div>
                     <div class="skill-item rv">
-                        <div class="skill-top"><span class="skill-nm">Python (Pandas, NumPy, Matplotlib, Django)</span><span class="skill-pc">75%</span></div>
+                        <div class="skill-top"><span class="skill-nm">Python (Pandas, NumPy, Matplotlib, Django)</span><span class="skill-pc">80%</span></div>
                         <div class="skill-track">
-                            <div class="skill-fill" data-pct="75"></div>
+                            <div class="skill-fill" data-pct="80"></div>
                         </div>
                     </div>
                     <div class="skill-item rv d2">
@@ -394,7 +433,7 @@
                         </div>
                     </div>
                     <div class="skill-item rv d4">
-                        <div class="skill-top"><span class="skill-nm">HTML5 &amp; CSS</span><span class="skill-pc">80%</span></div>
+                        <div class="skill-top"><span class="skill-nm">HTML5 &amp; CSS3</span><span class="skill-pc">80%</span></div>
                         <div class="skill-track">
                             <div class="skill-fill" data-pct="80"></div>
                         </div>
@@ -423,7 +462,7 @@
                         <span class="tool"><i class="fa-solid fa-terminal"></i>Termux</span>
                         <span class="tool"><i class="fab fa-github"></i>Git</span>
                         <span class="tool"><i class="fa-solid fa-earth-asia"></i>ArcGIS</span>
-                        <span class="tool"><i class="fa-solid fa-file-lines"></i>Office</span>
+                        <span class="tool"><i class="fa-solid fa-file-lines"></i>MS Office</span>
                     </div>
                 </div>
             </div>
@@ -461,7 +500,7 @@
                         <div class="proj-arrow"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                
+
                 <div class="proj-card rv d3" onclick="openM('m3')">
                     <div class="proj-thumb-wrap"><img src="res/images/weather.webp" class="proj-thumb" alt="MetroMate app screenshot">
                         <div class="proj-overlay"></div><span class="proj-bdg">WebApp</span>
@@ -533,7 +572,7 @@
                     <div class="c-body">
                         <div class="c-name">MS Word - Microsoft Word Course Beginner to Expert</div>
                         <div class="c-org">Udemy</div>
-                        <div class="c-desc">Completed a MS Word course covering essential tools &amp; features from beginner to advanced levels.</div>
+                        <div class="c-desc">Completed an MS Word course covering essential tools &amp; features from beginner to advanced levels.</div>
                         <a href="https://ude.my/UC-b6737138-7ce7-46a6-b9c1-67a6288b6e6a"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
@@ -596,7 +635,7 @@
                     <div class="c-body">
                         <div class="c-name">MS Word - Microsoft Word Course Beginner to Expert</div>
                         <div class="c-org">Udemy</div>
-                        <div class="c-desc">Completed a MS Word course covering essential tools &amp; features from beginner to advanced levels.</div>
+                        <div class="c-desc">Completed an MS Word course covering essential tools &amp; features from beginner to advanced levels.</div>
                         <a href="https://ude.my/UC-b6737138-7ce7-46a6-b9c1-67a6288b6e6a"><button class="c-but">See Credentials   <i class="fa-solid fa-up-right-from-square"></i></button></a>
                     </div>
                 </div>
@@ -622,7 +661,7 @@
             <div class="contact-grid">
                 <div class="rv">
                     <div class="c-links">
-                        <a href="https://rasel-ml.github.io/rasel-ml" class="c-link">
+                        <a href="https://rasel-ml.github.io/" class="c-link">
                             <div class="c-link-icon"><i class="fa-solid fa-link"></i></div>
                             <div>
                                 <div class="c-link-lbl">Website</div>
@@ -712,7 +751,11 @@
                     <li>Favorites system</li>
                     <li>Support for multiple sample texts with configurable priority</li>
                 </ul>
-                <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/FontLens/releases/"><button class="p-tab"><strong>Get Apk</strong></button></a> <a href="https://github.com/rasel-ml/FontLens"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/FontLens"><button class="p-tab"><strong>Website</strong></button></a></div>
+                <div class="m-meta m-flex">
+                    <a class="p-tab" href="https://github.com/rasel-ml/FontLens/releases/"><strong>Get Apk</strong></a>
+                    <a class="p-tab" href="https://github.com/rasel-ml/FontLens"><strong>Visit Repo</strong></a>
+                    <a class="p-tab" href="https://rasel-ml.github.io/FontLens"><strong>Website</strong></a>
+                </div>
             </div>
         </div>
     </div>
@@ -738,15 +781,19 @@
                     <li>View transaction history.</li>
                     <li>Travel fare calculator.</li>
                 </ul>
-                <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/MetroMate/releases/"><button class="p-tab"><strong>Get Apk</strong></button></a> <a href="https://github.com/rasel-ml/MetroMate"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/MetroMate"><button class="p-tab"><strong>Website</strong></button></a></div>
+                <div class="m-meta m-flex">
+                    <a class="p-tab" href="https://github.com/rasel-ml/MetroMate/releases/"><strong>Get Apk</strong></a>
+                    <a class="p-tab" href="https://github.com/rasel-ml/MetroMate"><strong>Visit Repo</strong></a>
+                    <a class="p-tab" href="https://rasel-ml.github.io/MetroMate"><strong>Website</strong></a>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <div class="modal-bg" id="m3" onclick="closeM(event,'m3')">
         <div class="modal-box">
             <div class="m-imgwrap">
-                <img src="res/images/weather.webp" class="m-img" alt="MetroMate app screenshot">
+                <img src="res/images/weather.webp" class="m-img" alt="Weather app screenshot">
 
                 <button class="m-close" onclick="closeModal('m3')" aria-label="Close">
                     <i class="fas fa-times"></i>
@@ -762,7 +809,10 @@
                     <li>Weather Visualization</li>
                     <li>Weather Analysis</li>
                 </ul>
-                <div class="m-meta m-flex"><a href="https://github.com/rasel-ml/EDGE-DataScience-Project"><button class="p-tab"><strong>Visit Repo</strong></button></a> <a href="https://rasel-ml.github.io/EDGE-DataScience-Project"><button class="p-tab"><strong>Visit WebApp</strong></button></a></div>
+                <div class="m-meta m-flex">
+                    <a class="p-tab" href="https://github.com/rasel-ml/EDGE-DataScience-Project"><strong>Visit Repo</strong></a>
+                    <a class="p-tab" href="https://rasel-ml.github.io/EDGE-DataScience-Project"><strong>Visit WebApp</strong></a>
+                </div>
             </div>
         </div>
     </div>
