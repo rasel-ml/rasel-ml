@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Md. Rasel Molla | Portfolio</title>
-    <meta name="description" content="An Android app developer and data science enthusiast from Bangladesh.">
+    <meta name="description" content="An Android app developer and data science enthusiast.">
     <meta name="author" content="Md. Rasel Molla">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0E8C7F">
     <meta property="og:title" content="Md. Rasel Molla | Portfolio">
-    <meta property="og:description" content="An Android app developer and data science enthusiast from Bangladesh.">
+    <meta property="og:description" content="An Android app developer and data science enthusiast.">
     <meta property="og:image" content="https://rasel-ml.github.io/res/images/og.jpg">
     <meta property="og:url" content="https://rasel-ml.github.io">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Md. Rasel Molla | Portfolio">
-    <meta name="twitter:description" content="An Android app developer and data science enthusiast from Bangladesh.">
+    <meta name="twitter:description" content="An Android app developer and data science enthusiast.">
     <meta name="twitter:image" content="https://rasel-ml.github.io/res/images/og.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
@@ -25,7 +25,32 @@
     <link rel="stylesheet" href="res/css/icons.css" type="text/css" />
     <link rel="preload" href="res/webfonts/DMSerifDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <script src="res/script/script.js" defer></script>
-    <noscript><link rel="stylesheet" href="error.css" type="text/css"></noscript>
+    <noscript>
+        <style>
+            .rv {
+                opacity: 1;
+                transform: none;
+            }
+            
+            #name::before {
+                content: 'Md. Rasel Molla';
+                animation: fadeUp .9s .55s ease both;
+            }
+            
+            #topbar button, .a-tabs, .cert-tabs {
+                display: none;
+            }
+            
+            .info-cards {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .tab-label {
+                display: block;
+            }
+        </style>
+    </noscript>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
