@@ -1,0 +1,22 @@
+.rv {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+#name::before {
+    content: 'Md. Rasel Molla' !important;
+    animation: fadeUp .9s .55s ease both !important;
+}
+
+#topbar button, .a-tabs, .cert-tabs {
+    display: none !important;
+}
+
+.info-cards {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.tab-label {
+    display: block !important;
+}

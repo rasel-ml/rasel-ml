@@ -25,14 +25,7 @@
     <link rel="stylesheet" href="res/css/icons.css" type="text/css" />
     <link rel="preload" href="res/webfonts/DMSerifDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <script src="res/script/script.js" defer></script>
-    <noscript>
-        <style>
-            .rv{opacity:1;transform:none}
-            #name::before {content: 'Md. Rasel Molla'; animation: fadeUp .9s .55s ease both;}
-            #topbar button, .a-tabs, .cert-tabs{display:none;}
-            .info-cards{display: flex; flex-direction: column}
-        </style>
-    </noscript>
+    <noscript><link rel="stylesheet" href="error.css" type="text/css"></noscript>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -160,7 +153,7 @@
                 <button class="a-tab" onclick="switchaTab(this,'education')">Education</button>
                 <button class="a-tab" onclick="switchaTab(this,'others')">Others</button>
             </div>
-
+            <div class="tab-label">Personal Information</div>
             <div id="personal" class="info-cards active">
                 <div class="info-label">Basic Info</div>
                 <div class="info-card rv d1">
@@ -239,7 +232,7 @@
                 </div>
 
             </div>
-
+            <div class="tab-label">Education</div>
             <div id="education" class="info-cards">
 
                 <div class="info-label">SSC</div>
@@ -345,6 +338,7 @@
                     </div>
                 </div>
             </div>
+            <div class="tab-label">Others</div>
             <div id="others" class="info-cards">
                 <div class="info-label">Language</div>
                 <div class="info-card rv d1">

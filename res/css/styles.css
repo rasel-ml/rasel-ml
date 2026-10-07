@@ -900,6 +900,17 @@ section {
     box-shadow: 0 4px 16px rgba(42, 92, 69, .24)
 }
 
+.tab-label {
+    display:none;
+    font-family: 'DMSerif', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ink2);
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border2)
+}
 /* ═══════════ SKILLS ═══════════ */
 .skills-grid {
     display: grid;
